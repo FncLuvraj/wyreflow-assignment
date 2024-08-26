@@ -1,0 +1,159 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+.wrapper {
+    position: relative;
+    width: 100%;
+   
+}
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.bottom-image {
+    width: 100%;
+    display: block;
+}
+
+.top-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 1; /* Adjust the opacity as needed */
+}
+.middle-image {
+    position: absolute;
+    width: 787px;
+    height: 487px;
+    top: 188px;
+    left: 347px;
+}
+.mid-section{
+   /* // position: relative; */
+    width: 100%;
+    height: auto;
+}
+.mid-1{
+    position:absolute;
+    width: 802px;
+    height: 315px;
+    top: 930px;
+    left: 353px;
+}
+.mid-2{
+    position:absolute;
+    width: 801px;
+    height: 316px;
+    top: 1337px;
+    left: 353px;
+    gap: 0px;
+}
+
+.mid-3{
+    position:absolute;
+    width: 1132.69px;
+    height: 430.48px;
+    top: 1803px;
+    left: 154px;
+    gap: 50px;
+    opacity: 0px;
+
+}
+.phone{
+    position: absolute;
+    width: 1444px;
+    height: 603px;
+    top: 2383px;
+    left: -2px;
+    gap: 0px;
+}
+
+.client {
+    position: absolute;
+    width: 1115px;
+    height: 594.42px;
+    top: 3200px;
+    left: 162px;
+    z-index: 2; /* Ensure the client image appears above the vector */
+    opacity: 1; /* Set to 1 if you want the client image to be visible */
+}
+.vector {
+    position: absolute;
+    width: 1549.44px; /* Use the exact width as in Figma */
+    height: 905px; /* Use the exact height as in Figma */
+    top: 3125.17px; /* Start at the top of the section */
+    left: -50.14px; /* Center the vector horizontally */
+    transform:  rotate(9.37deg); /* Center horizontally and rotate */
+    z-index: 1; /* Ensure the vector is behind the client content */
+}
+.before-footer{
+    position: absolute;
+    width: 1441px;
+    height: 508.16px;
+    top: 3880px;
+    left: -1px;
+
+}
+.footer{
+    position: absolute;
+    width:1438px;
+    height:353.6px;
+    top: 4549px;
+    left: 1px;
+    gap: 100px;
+}
+
+@media (max-width: 1200px) {
+    .middle-image, .mid-1, .mid-2, .mid-3, .phone, .vector, .client, .before-footer, .footer {
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 768px) {
+    .middle-image, .mid-1, .mid-2, .mid-3, .phone, .vector, .client, .before-footer, .footer {
+        width: 90%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 480px) {
+    .middle-image, .mid-1, .mid-2, .mid-3, .phone, .vector, .client, .before-footer, .footer {
+        width: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .middle-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .mid-1, .mid-2, .mid-3 {
+        width: 100%;
+        height: auto;
+        top: auto;
+        left: auto;
+    }
+
+    .phone, .client, .vector {
+        width: 100%;
+        height: auto;
+    }
+
+    .before-footer, .footer {
+        width: 100%;
+        height: auto;
+        top: auto;
+        left: auto;
+    }
+}
