@@ -81,17 +81,17 @@ body, html {
     height: 594.42px;
     top: 3200px;
     left: 162px;
-    z-index: 2; /* Ensure the client image appears above the vector */
-    opacity: 1; /* Set to 1 if you want the client image to be visible */
+    z-index: 2; 
+    opacity: 1; 
 }
 .vector {
     position: absolute;
-    width: 1549.44px; /* Use the exact width as in Figma */
-    height: 905px; /* Use the exact height as in Figma */
-    top: 3125.17px; /* Start at the top of the section */
-    left: -50.14px; /* Center the vector horizontally */
-    transform:  rotate(9.37deg); /* Center horizontally and rotate */
-    z-index: 1; /* Ensure the vector is behind the client content */
+    width: 1549.44px; 
+    height: 905px; 
+    top: 3125.17px; 
+    left: -50.14px; 
+    transform:  rotate(9.37deg);
+    z-index: 1; 
 }
 .before-footer{
     position: absolute;
